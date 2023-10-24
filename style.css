@@ -15,6 +15,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    border-color: #000000;
 }
 
 nav a {
@@ -22,6 +23,7 @@ nav a {
     color: #fff;
     margin: 0 20px;
     transition: color 0.3s;
+    border-color: #000000;
 }
 
 nav a:hover {
@@ -83,10 +85,12 @@ text-decoration: none;
 color: #fff;
 margin: 0 20px;
 transition: color 0.3s; /* Agregar una transición de color de 0.3 segundos */
+border-color: #000000;
 }
 
 nav a:hover {
 color: #ff5733; /* Cambia el color al acercar el cursor */
+border-color: #000000;
 }
 
 .mejor-piloto-container {
