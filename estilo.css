@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.viajes-disponibles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.viaje {
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.costos {
+    margin-top: 20px;
+}
+
+.piloto-de-la-semana {
+    margin-top: 20px;
+}
+
+.piloto-info {
+    display: flex;
+    align-items: center;
+}
+
+.piloto-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.piloto-details {
+    font-size: 16px;
+}
+nav a {
+text-decoration: none;
+color: #fff;
+margin: 0 20px;
+transition: color 0.3s; /* Agregar una transición de color de 0.3 segundos */
+}
+
+nav a:hover {
+color: #ff5733; /* Cambia el color al acercar el cursor */
+}
+
+.mejor-piloto-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: 20px; /* Agrega margen para separarlo del contenido principal */
+    width: 30%; /* Ajusta el ancho según tus preferencias */
+    float: left; /* Alinea a la izquierda */
+}
