@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/48/48870.png">
+    <link rel="stylesheet" href="css/cabecera.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <title>Registro de Viajes</title>
+</head>
+<body>
+    <header>
+        <h1>Agencia de Viajes "DoryanAirs"</h1>
+        <img src="img\logo.jpg" alt="logo" width="100px">
+        
+        <nav>
+            <a href="index.html">Piloto</a>
+            <a href="sugerencias.php">Sugerencias</a>
+            <a href="Index.php">Viajes en Tiempo Real</a>
+            <a href="index.html">Administrador</a>
+        </nav>
+    </header>
+
+    <form action="pilotos.php" method="post">
+        <h1>Registro de Viajes</h1>
+        <label for="Id">Id</label>
+        <input type="text" id="Id" name="Id" placeholder="Escriba un id">
+        <label for="Viajes">Viajes</label>
+        <input type="text" id="Viajes" name="Viajes" placeholder="Escriba un Viaje">
+        <label for="Vuelo">Clase Vuelo</label>
+        <input type="text" id="Vuelo" name="Vuelo" placeholder="Escriba la clase de vuelo">
+        <label for="Destino">Destino</label>
+        <input type="text" id="Destino" name="Destino" placeholder="Escriba el destino">
+        <label for="Salida">Salida</label>
+        <input type="text" id="Salida" name="Salida" placeholder="Escriba el lugar de salida">
+        <label for="Llegada">Llegada</label>
+        <input type="text" id="Llegada" name="Llegada" placeholder="Escriba el lugar de llegada">
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>
