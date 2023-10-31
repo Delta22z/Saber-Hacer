@@ -167,5 +167,35 @@
             </div>
         </div>
     </div>
+
+
+    /* Apartado de Aviso de Privacidad de Proteccion de Datos Personales */
+    <button id="open">
+    Hacer Click
+  </button>
+  
+  <div id="modal_container" class="modal-container">
+    <div class="modal">
+      <h1>Aviso de Privacidad de Proteccion de Datos Personales</h1>
+      <p>
+        Doryan Airlines - 10/30/2023
+        <p>Responsable de la Protección de Datos Personales:
+          Oscar Martines Avila
+          Oskarinavila@gmail.com</p>
+         
+          <p>Acceder a sus datos personales.
+          Rectificar sus datos personales en caso de inexactitudes.</p>
+          <p>Mecanismos de Seguridad:
+          Hemos implementado medidas de seguridad técnicas, administrativas y físicas para proteger sus datos personales y evitar su acceso no autorizado, pérdida, robo o daño.</p>
+          <p>Transferencias de Datos:
+          Sus datos personales podrán ser transferidos a terceros únicamente para las finalidades antes mencionadas.</p>
+          <p>Procedimiento para Ejercer Derechos:
+          Para ejercer sus derechos, o si tiene alguna pregunta o inquietud sobre la protección de sus datos personales.</p>        
+</p>
+      <button id="close">Aceptar</button>
+    </div>
+  </div>
+  <script src="js.js"></script>
+
 </body>
 </html>
