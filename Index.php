@@ -29,16 +29,54 @@
         .costos td:nth-child(4) {
             color: blue;
         }
+        /* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el enlace de "Aviso de Privacidad" */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px; /* Espacio entre el texto y el botón */
+}
+
+/* Estilo para el botón de "Aviso de Privacidad" */
+footer a.button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none;
+    border-radius: 5px; /* Borde redondeado del botón */
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Estilo para el botón al pasar el mouse sobre él */
+footer a.button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Agencia de Viajes "DoryanAirs"</h1>
+        <h1>Agencia de Viajes "DORYAN’S AIRWAYS"</h1>
         <img src="img\logo.jpg" alt="logo" width="100px">
         
         
         <nav>
-            <a href="#">Piloto</a>
+            <a href="pilotos.php">Piloto</a>
             <a href="sugerencias.php">Sugerencias</a>
             <a href="#">Viajes en Tiempo Real</a>
             <a href="#">Acerca de</a>
@@ -168,11 +206,10 @@
         </div>
     </div>
 
-<footer>
-    
+    <footer>
+    <p>Derechos de autor © 2023 DoryanAirs. Todos los derechos reservados.</p>
+    <a href="https://static.googleusercontent.com/media/www.google.com/es//intl/es-419/policies/privacy/google_privacy_policy_es-419.pdf">Aviso de Privacidad</a>
 </footer>
-
-
 
 </body>
 </html>
