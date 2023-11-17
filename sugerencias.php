@@ -33,6 +33,24 @@
             color: blue;
         }
     </style>
+
+<script>
+        function getWeather(city) {
+            // Obtén la información meteorológica actual
+            const url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=TU_CLAVE_API";
+            const response = fetch(url);
+            const data = await response.json();
+
+            // Imprime la temperatura actual
+            document.querySelector("#temperatura").textContent = data["main"]["temp"];
+        }
+
+        document.querySelector("#ciudad").addEventListener("change", () => {
+            getWeather(document.querySelector("#ciudad").value);
+        });
+
+        getWeather("San Francisco");
+    </script>
 </head>
 <body>
     <header>
@@ -40,11 +58,11 @@
         <img src="img\logo.jpg" alt="logo" width="100px">
         
         <nav>
-            <a href="#">Piloto</a>
+            <a href="index.html">Piloto</a>
             <a href="#">Sugerencias</a>
             <a href="index.php">INICIO</a>
             <a href="#">Viajes en Tiempo Real</a>
-            <a href="#">Acerca de</a>
+            <a href="index.html">Administrador</a>
         </nav>
     </header>
 
@@ -118,5 +136,17 @@
             ?>
         </div>
     </div>
+
+    
+    <div id="ciudad">
+        <select>
+            <option value="San Francisco">San Francisco</option>
+            <option value="Ciudad de México">Ciudad de México</option>
+            <option value="Londres">Londres</option>
+            <option value="Tokio">Tokio</option>
+        </select>
+    </div>
+
+    <div id="temperatura"></div>
 </body>
 </html>

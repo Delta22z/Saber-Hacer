@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Twitter API Example</title>
+</head>
+<body>
+    <script>
+        function getTweets(usuario) {
+            // Obtén los últimos tweets de la cuenta
+            const url = "https://api.twitter.com/2/tweets/search/recent?q=from:" + usuario + "&count=10";
+            const response = fetch(url, {
+                headers: {
+                    Authorization: "Bearer TU_CLAVE_API"
+                }
+            });
+            const data = await response.json();
+
+            // Imprime los tweets
+            for (const tweet of data["data"]) {
+                document.querySelector("#tweets").innerHTML += `
+                    <div>
+                        <p>${tweet["text"]}</p>
+                        <p>Fecha: ${tweet["created_at"]}</p>
+                    </div>
+                `;
+            }
+        }
+
+        getTweets("Bard");
+    </script>
+
+    <div id="tweets"></div>
+</body>
+</html>

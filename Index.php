@@ -79,10 +79,11 @@ footer a.button:hover {
             <a href="pilotos.php">Piloto</a>
             <a href="sugerencias.php">Sugerencias</a>
             <a href="#">Viajes en Tiempo Real</a>
-            <a href="#">Acerca de</a>
+            <a href="acercaDe.php">Acerca de</a>
         </nav>
     </header>
-
+    <center>
+    <div id="ww_dae56da644ca" v='1.3' loc='id' a='{"t":"responsive","lang":"es","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Más previsiones: <a href="https://oneweather.org/de/deutschland/30_tage/" id="ww_dae56da644ca_u" target="_blank">30 tage wettervorhersage</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_dae56da644ca"></script>    </center>
     <div class="container">
         <h2>Viajes Disponibles</h2>
         <div class="viajes-disponibles">
@@ -188,7 +189,7 @@ footer a.button:hover {
             ?>
         </div>
 
-
+<center/>
         <div class="mejor-piloto-container">
             <div class="mejor-piloto">
                 <h2>Mejor Piloto de la Semana</h2>
@@ -205,11 +206,15 @@ footer a.button:hover {
             </div>
         </div>
     </div>
-
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VkkmbI3FnWY?si=G8DdbwMHXmcZw5ee" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <footer>
     <p>Derechos de autor © 2023 DoryanAirs. Todos los derechos reservados.</p>
     <a href="https://static.googleusercontent.com/media/www.google.com/es//intl/es-419/policies/privacy/google_privacy_policy_es-419.pdf">Aviso de Privacidad</a>
 </footer>
 
+
+
 </body>
 </html>
+
+
